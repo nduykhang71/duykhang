@@ -1,0 +1,395 @@
+body{
+    background: rgb(218, 215, 209);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.logo img{
+    width: 70px;
+}
+.header{
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+   
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu .item a{
+    color: black;
+    margin: 0px 30px;
+    text-decoration: none;
+}
+.item a:hover{
+    color: rgb(243, 157, 221);
+}
+.actions{
+    display: flex;
+}
+.actions img{
+    margin-left: 22px;
+}
+.banner{
+    width: 100%;
+    background-image: url(z4331505840341_6a7e419bf501a1ffd054332397638247.jpg);
+    background-size: cover;
+    background-position-y: -90px;
+    height: 463px;
+    margin-top: 40px;
+    display: flex;
+    padding: 0px 133px;
+    position: relative;
+}
+.banner .box-left ,.banner .box-right{
+
+    width: 50%;
+}
+.banner .box-left h2{
+    font-size: 48px;
+    margin-top: 75px;
+    color: antiquewhite;
+
+}
+.banner .box-left button{
+    width: 190px;
+    height: 40px;
+    margin-top: 41px;
+    background-color: #1d1a1a;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.banner .box-left button:hover{
+    background-color: orange;
+}
+.box-right img{
+    width: 250px;
+    height: 250px;
+}
+.banner .box-right img{
+    margin: 0px 10px;
+    animation: animation 3s infinite linear;
+}
+.banner .box-right img:nth-child(1)
+{
+animation-delay: 0.5s;
+}
+.banner .box-right img:nth-child(2)
+{
+animation-delay: 1s;
+}
+@keyframes animation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);   
+    }
+    
+}
+.banner .box-right{
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SanPham{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item img{
+    width: 170px;
+} 
+.wp-products{
+    padding-top: 116px;
+    padding-bottom: 78px;
+    padding-left: 134px;
+    padding-right: 134px;
+}
+.wp-products h2{
+    text-align: center;
+    margin-bottom: 76px;
+    font-size: 30px;
+    color: black;
+}
+.list-products{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.list-products .item{
+    width: 290px;
+    height: 374px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    /* margin: 0px 50px 50px 100px; */
+}
+.list-page{
+    width: 50%;
+    margin: 0px auto;
+}
+.list-page{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    margin: 0px 20px;
+    width: 37px;
+    height: 37px;
+    background: #453838;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    width: 100%;
+    background:brown;
+    height: 322px;
+    margin-top: 338px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .box{
+    width: 250px;
+    color: white;
+}
+.footer .box .quick-menu{
+    margin-top: 40px;
+
+}
+.footer .box .quick-menu .item{
+    margin-top: 12px;
+    
+}
+.footer .box .quick-menu .item a{
+    color: white;
+    text-decoration: none;
+}
+.footer .box form button{
+    background: orange;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    width: 163px;
+    height: 38px;
+    margin-top: 20px;
+    color: white;
+}
+.h0
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    position: relative;
+    width: 370px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    box-shadow: 0 0 30px;
+    transition: height .6s ease;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+
+.wrapper .h5{
+    position: absolute;
+    transition: none;
+    transform: translateX(0px);
+}
+ 
+.h1 h2{
+    font-size: 2em;
+    font-family: "Arial";
+    text-align: center;
+}
+.h2{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.h2 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.h2 input:focus~label,
+.h2 input:valid~label
+{
+    top:-5px;
+}
+.h2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 5px;
+}
+.h2 .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #172938;
+    line-height: 57px;
+}
+.h3{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    font-weight: 500;
+}
+.h3 label input{
+    margin-right: 3px;
+}
+.h3 a{
+    color: #162938;
+    text-decoration: none;
+}
+.h3 a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    background: rgb(30, 28, 24);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: rgb(243, 234, 234);
+}
+.h4{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.h4 p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.h4 p a:hover{
+    text-decoration: underline;
+}
+.btn a{
+    text-decoration: none;
+}
+.h7{
+    width: 100%;
+    min-height: -110px;
+    position: fixed;
+}
+.DK{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.DK a{
+    text-decoration: none;
+    color: #162938;
+}
+.soluong{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.donhang{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.giohang{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tenSP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.dongia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.soluong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.thanhtoan button{
+    width: 190px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #1d1a1a;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.4s;
+
+}
+.thanhtoan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.giohang img{
+    width: 300px;
+    height: 300px;
+}
